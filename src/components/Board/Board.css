@@ -1,0 +1,30 @@
+.cell {
+    background-color: rgb(255, 255, 255);
+    margin: 10px 0;
+    aspect-ratio: 1;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.button {
+    aspect-ratio: 1;
+    width: 50px;
+    margin-bottom: 10px;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colNumber {
+    display: block;
+    margin-top: 10px;
+}
