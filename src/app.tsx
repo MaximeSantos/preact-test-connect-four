@@ -1,5 +1,5 @@
-import "./app.css";
-import Board from "./components/Board/Board";
+import './app.css';
+import Board from './components/Board/Board';
 
 // Goals :
 // - Create a simple connect four app
