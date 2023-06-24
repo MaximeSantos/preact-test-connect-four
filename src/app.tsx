@@ -1,5 +1,8 @@
-import './app.css';
+import { signal } from '@preact/signals';
+
 import Board from './components/Board/Board';
+
+import './app.css';
 
 // Goals :
 // - Create a simple connect four app
@@ -9,11 +12,16 @@ import Board from './components/Board/Board';
 // - Try out signals ?
 
 export function App() {
+  const currentPlayer = signal('red');
+
   return (
     <>
       <h1>Connect Four</h1>
-      <h2>RED turn</h2>
-      <Board />
+      <h2>
+        {/* Allows us to capitalise first letter */}
+        {currentPlayer.value.charAt(0).toUpperCase() + currentPlayer.value.slice(1)} turn
+      </h2>
+      <Board currentPlayer={currentPlayer} />
     </>
   );
 }
